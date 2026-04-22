@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multi AI Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>AI Hub</h1>
+
+    <select id="model">
+      <option value="gemini">Gemini (Free)</option>
+      <option value="groq">Groq (Free)</option>
+      <option value="openai">ChatGPT (API Key)</option>
+      <option value="claude">Claude (API Key)</option>
+    </select>
+
+    <div id="chat"></div>
+
+    <input id="input" placeholder="Type something..." />
+    <button onclick="send()">Send</button>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
